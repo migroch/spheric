@@ -19,7 +19,7 @@
 #define NGRIDDF 1001
 
 /*This factor converts velocities from internal units (G = 1) to km/s. velConvert = sqrt(G)*/
-#define velConvert 2.07398e2  
+#define velConvert 2.07382e2  
 
 /*
  *Stuff
