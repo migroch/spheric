@@ -4,9 +4,9 @@
 **  It can generate haloes from the alpha-beta-gamma family with a stellar component 
 **  that follows a King, Plummer or Hernquist density profile. 
 **
-**  This is an extended version of the halogen4muse code written by Marcel Zemp:mzemp@umich.edu 
+**  This is an extended version of the halogen4muse code written by Marcel Zemp (mzemp@pku.edu.cn, http://kiaa.pku.edu.cn/~mzemp/). 
 **
-**  halogen4muse was extended by Miguel Rocha:rocham@uci.edu to embeed stellar
+**  halogen4muse was extended by Miguel Rocha (rocham@uci.edu, http://mrocha.org) to embeed stellar
 **  components into the generated haloes.
 */
 
