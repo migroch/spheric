@@ -83,7 +83,7 @@ When using this functionality the mass-to-light ratios will be written on the AS
 \section{Units and fine tuning}
 
 \subsection{Units}
-SpherIC performs all calculations by setting $G = 1$ and using the system of units that you pass to it on the command line for mass and length. At the end of the calculation it converts all velocities multiplying them by the conversion factor $velConvert$ that is defined in the file ``definitions.h''. Thus $velConvert$ must be equal to the value of $\sqrt{G}$ in the system of units that you are using. For example $velConvert = 207.398$ when using units of $10^{10}$ $\mathrm{M}_{\odot}$ for mass, kpc for length and km/s for velocity. This is how SpherIC is distributed, if you want to use a different system of units you will have to change the value of $velConvert$ in the ``definitions.h'' file.
+SpherIC performs all calculations by setting $G = 1$ and using the system of units that you pass to it on the command line for mass and length. At the end of the calculation it converts all velocities multiplying them by the conversion factor $velConvert$ that is defined in the file ``definitions.h''. Thus $velConvert$ must be equal to the value of $\sqrt{G}$ in the system of units that you are using. For example $velConvert = 207.382$ when using units of $10^{10}$ $\mathrm{M}_{\odot}$ for mass, kpc for length and km/s for velocity. This is how SpherIC is distributed, if you want to use a different system of units you will have to change the value of $velConvert$ in the ``definitions.h'' file.
 
 \subsection{Fine tuning}
 There is a few other definitions that you may want to change on the ``definitions.h'' file.

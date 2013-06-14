@@ -97,13 +97,13 @@ DOUBLE integraldf(DOUBLE (*d2anyrhodPhi2)(DOUBLE,const SI (*)),INT j, const SI *
   }
   fprintf(stderr,"Warning!\n");
   fprintf(stderr,"Too many steps in function integraldf!\n");
-  fprintf(stderr,"E = "OFD3" kpc^2 Gyr^-2\n",si->gridr->Pot[j]);
-  fprintf(stderr,"r = "OFD3" kpc\n",si->gridr->r[j]);
-  fprintf(stderr,"f(E) = "OFD3" MU Gyr^3 kpc^-6\n",SB);
+  fprintf(stderr,"E = "OFD3" LU^2 Gyr^-2\n",si->gridr->Pot[j]);
+  fprintf(stderr,"r = "OFD3" LU\n",si->gridr->r[j]);
+  fprintf(stderr,"f(E) = "OFD3" MU Gyr^3 LU^-6\n",SB);
   fprintf(stderr,"f(E) not converged within tolerance of %e\n",TOLDF);
   fprintf(stderr,"Abort tolerance was %e\n",fabs((SA-SB)/SB));
   if (SB != SB) {
-    fprintf(stderr,"f(E) value set to %e MU Gyr^3 kpc^-6\n",DFFAILUREMAX);
+    fprintf(stderr,"f(E) value set to %e MU Gyr^3 LU^-6\n",DFFAILUREMAX);
     return DFFAILUREMAX;
   }
   else {

@@ -198,7 +198,7 @@ void calculate_parameters(SI *si) {
 	if (si->sp->rcutoff != -1) {
 	  fprintf(stderr,"Warning: ");
 	  fprintf(stderr,"For finite mass models the cutoff radius rcutoff is not needed!\n");
-	  fprintf(stderr,"Hence, your input for the cutoff radius rcutoff (= "OFD1" kpc) was ignored.\n",si->sp->rcutoff);
+	  fprintf(stderr,"Hence, your input for the cutoff radius rcutoff (= "OFD1" LU) was ignored.\n",si->sp->rcutoff);
 	}
 	si->sp->rdecay = 0;
 	si->sp->delta = 0;
