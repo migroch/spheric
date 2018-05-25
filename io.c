@@ -291,7 +291,7 @@ void write_profiles(FILE *F, const SI *si,int Ngrid, double rlow, double rup){
 
 void write_gadget(FILE *fp, const PARTICLE *bh, const SI *si){
 
-  int i, j, dummy, Ntotal,Ndark,Nstar;
+  int i, j, dummy, Ntotal,Ndark,Nstar, temp_i;
   float temp;
   PARTICLE *p;
   PARTICLE *pstar;
@@ -434,12 +434,12 @@ void write_gadget(FILE *fp, const PARTICLE *bh, const SI *si){
   assert(fwrite(&dummy,sizeof(int),1,fp) == 1);
     
   for(i = 0; i < Ndark; i++) {
-    temp = p[i].index;
-    assert(fwrite(&temp,sizeof(int),1,fp) == 1);
+    temp_i = p[i].index;
+    assert(fwrite(&temp_i,sizeof(int),1,fp) == 1);
   }
   for(i = 0; i < Nstar; i++) {
-    temp = pstar[i].index;
-    assert(fwrite(&temp,sizeof(int),1,fp) == 1);
+    temp_i = pstar[i].index;
+    assert(fwrite(&temp_i,sizeof(int),1,fp) == 1);
   }
   assert(fwrite(&dummy,sizeof(int),1,fp) == 1);
 
